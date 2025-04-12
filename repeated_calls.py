@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 from collections import defaultdict
@@ -7,6 +6,8 @@ from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font
 from PIL import Image
+
+st.set_page_config(page_title="Repeated Calls Analyzer", layout="centered")
 
 # Display logo
 try:

@@ -150,3 +150,11 @@ if uploaded_file is not None:
             )
     except Exception as e:
         st.error(f"❌ An error occurred while processing the file: {e}")
+        # =======================
+# חתימה בסוף הדף - מחוץ לבלוקים
+# =======================
+
+st.markdown("---")
+st.markdown("🧑‍💻 Developed by: **Sergey Minchin** – Polytex Service Team")
+st.markdown("📧 sergeym@polytex.co.il")
+st.markdown("📅 תאריך עדכון אחרון: אפריל 2025")

@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 from collections import defaultdict
@@ -7,8 +8,6 @@ from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font
 from PIL import Image
 
-st.set_page_config(page_title="Repeated Calls Analyzer", layout="centered")
-
 # Display logo
 try:
     logo = Image.open("logo.png")
@@ -17,7 +16,6 @@ except Exception:
     st.warning("Logo not found. Please upload 'logo.png' to display branding.")
 
 
-st.set_page_config(page_title="Repeated Calls Analyzer", layout="centered")
 st.title("Repeated Service Calls Analyzer")
 
 uploaded_file = st.file_uploader("Upload the Service Calls Report (.xlsx)", type=["xlsx"])

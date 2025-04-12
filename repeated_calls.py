@@ -2,16 +2,14 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-
-logo = Image.open("logo.png")
-st.image(logo, use_container_width=True)
-
 from collections import defaultdict
 from io import BytesIO
 from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font
 
+logo = Image.open("logo.png")
+st.image(logo, use_container_width=True) 
 st.set_page_config(page_title="Repeated Calls Analyzer", layout="centered")
 st.title("Repeated Service Calls Analyzer")
 

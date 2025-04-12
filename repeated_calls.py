@@ -5,7 +5,7 @@ from io import BytesIO
 from PIL import Image
 
 logo = Image.open("logo.png")
-st.image(logo, use_container_width=True)
+st.image(logo, use_container_width=False)
 
 
 st.title("Repeated Service Calls Analyzer")

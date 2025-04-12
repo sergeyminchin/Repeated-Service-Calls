@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 from collections import defaultdict
@@ -11,7 +10,7 @@ from PIL import Image
 # Display logo
 try:
     logo = Image.open("logo.png")
-    st.image(logo, use_container_width=False)
+    st.image(logo, use_container_width=True)
 except Exception:
     st.warning("Logo not found. Please upload 'logo.png' to display branding.")
 
@@ -150,7 +149,9 @@ if uploaded_file is not None:
             )
     except Exception as e:
         st.error(f"❌ An error occurred while processing the file: {e}")
-        # =======================
+
+
+# =======================
 # חתימה בסוף הדף - מחוץ לבלוקים
 # =======================
 

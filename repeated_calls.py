@@ -1,6 +1,11 @@
 
 import streamlit as st
 import pandas as pd
+from PIL import Image
+
+logo = Image.open("logo.png")
+st.image(logo, use_container_width=True)
+
 from collections import defaultdict
 from io import BytesIO
 from openpyxl import load_workbook

@@ -6,6 +6,15 @@ from io import BytesIO
 from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font
+from PIL import Image
+
+# Display logo
+try:
+    logo = Image.open("logo.png")
+    st.image(logo, use_container_width=True)
+except Exception:
+    st.warning("Logo not found. Please upload 'logo.png' to display branding.")
+
 
 st.set_page_config(page_title="Repeated Calls Analyzer", layout="centered")
 st.title("Repeated Service Calls Analyzer")

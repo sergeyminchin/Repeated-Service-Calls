@@ -11,7 +11,7 @@ from PIL import Image
 # Display logo
 try:
     logo = Image.open("logo.png")
-    st.image(logo, use_container_width=True)
+    st.image(logo, use_container_width=False)
 except Exception:
     st.warning("Logo not found. Please upload 'logo.png' to display branding.")
 

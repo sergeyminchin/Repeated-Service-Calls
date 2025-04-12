@@ -1,5 +1,5 @@
 runtime: python310
-entrypoint: streamlit run repeated_calls.py --server.port=$PORT --server.headless=true
+entrypoint: streamlit run repeated_calls_streamlit.py --server.port=$PORT --server.headless=true
 
 instance_class: F2
 
